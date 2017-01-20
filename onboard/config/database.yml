@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: mysql2
-  encoding: utf-8
+  encoding: utf8
   username: onboard_master
   password: onboard
   pool: 5

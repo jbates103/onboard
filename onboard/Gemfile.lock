@@ -39,7 +39,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (6.6.1)
+      execjs
     bcrypt (3.1.11)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -57,6 +62,9 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise_security_extension (0.9.2)
+      devise (>= 2.0.0)
+      rails (>= 3.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.17)
@@ -89,6 +97,10 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
+    phony (2.15.39)
+    phony_rails (0.14.4)
+      activesupport (>= 3.0)
+      phony (~> 2.15)
     puma (3.6.2)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
@@ -169,13 +181,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
   devise
+  devise_security_extension
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   mysql2
+  phony_rails
   puma (~> 3.0)
   pundit
   rails (~> 5.0.0, >= 5.0.0.1)
