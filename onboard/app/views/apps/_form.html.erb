@@ -1,0 +1,50 @@
+<%= form_for @app do |f| %>
+  <% if @app.errors.any? %>
+    <ul>
+      <% @app.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %><br />
+
+  <%= f.label :app_url %>
+  <%= f.text_field :app_url %><br />
+
+  <%= f.label :user_population %>
+  <%= f.text_field :user_population %><br />
+
+  <%= f.label :sso_technology %>
+  <%= f.text_field :sso_technology %><br />
+
+  <%= f.label :status %>
+  <%= f.text_field :status %><br />
+
+  <%= f.label :epic %>
+  <%= f.text_field :epic %><br />
+
+  <%= f.label :jira_ticket_id %>
+  <%= f.text_field :jira_ticket_id %><br />
+
+  <%= f.label :app_updated %>
+  <%= f.text_field :app_updated %><br />
+
+  <%= f.label :app_created %>
+  <%= f.text_field :app_created %><br />
+
+  <%= f.label :resolution %>
+  <%= f.text_field :resolution %><br />
+
+   <%= f.label :due %>:
+  <%= f.text_field :due %><br />
+
+    <%= f.label :reporter %>
+  <%= f.text_field :reporter %><br />
+
+  <%= f.label :assignee %>
+  <%= f.text_field :assignee %><br />
+
+  <%= f.submit %>
+<% end %>

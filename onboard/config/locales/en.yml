@@ -20,4 +20,38 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  onboard:
+    controllers:
+      dashboad:
+        index:
+          unauthorized: 'Unauthorized: Must be apart of staff'
+      staff:
+        create:
+          success: 'Staff member successfully created!'
+          failure: 'Error: Staff member creation unsuccessful!'
+        destroy:
+          success: 'Staff member successfully delete!'
+          failure: 'Error: Staff member deletion unsuccessful!'
+        update:
+          success: 'Staff member successfully created!'
+          failure: 'Error: Staff member update unsuccessful!'
+      point_of_contact:
+        create:
+          success: 'Point of contact successfully created!'
+          failure: 'Error: Point of contact creation unsuccessful!'
+        destroy:
+          success: 'Point of contact successfully delete!'
+          failure: 'Error: Point of contat deletion unsuccessful!'
+        update:
+          success: 'Point of contact successfully created!'
+          failure: 'Error: Point of contact update unsuccessful!'
+      apps:
+        create:
+          success: 'Application successfully created!'
+          failure: 'Error: Application creation unsuccessful!'
+        destroy:
+          success: 'Application successfully delete!'
+          failure: 'Error: Application deletion unsuccessful!'
+        update:
+          success: 'Application successfully created!'
+          failure: 'Error: Application update unsuccessful!'

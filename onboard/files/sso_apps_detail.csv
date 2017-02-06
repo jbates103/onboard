@@ -1,0 +1,188 @@
+Key,Summary,Status,Labels,Epic Link,Owner/Poc,Description,Updated,Application Url
+USCISICAM-3482,DID(it) BADS,NOT STARTED,Prod,USCISICAM-3477,,DID(it) BADS,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3482?src=confmacro
+USCISICAM-3481,DID(it) AST Error Tracker,NOT STARTED,Prod,USCISICAM-3477,,DID(it) AST Error Tracker,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3481?src=confmacro
+USCISICAM-3480,DID(it) Asset Manager,NOT STARTED,Prod,USCISICAM-3477,,DID(it) Asset Manager,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3480?src=confmacro
+USCISICAM-3479,DID(it) App Store,NOT STARTED,Prod,USCISICAM-3477,,DID(it) App Store,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3479?src=confmacro
+USCISICAM-3478,Pivotal Cloud Foundry,NOT STARTED,Prod,USCISICAM-3477,,Pivotal Cloud Foundry,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3478?src=confmacro
+USCISICAM-3476,DID(it) Union Time,NOT STARTED,PreProd,USCISICAM-3415,,DID(it) Union Time,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3476?src=confmacro
+,,,,,,DID(it) Union Time - Preview union_time_preview,,
+,,,,,,DID(it) Union Time - Staging union_time_staging,,
+,,,,,,DID(it) Union Time - TEST union_time_test,,
+USCISICAM-3475,DID(it) Ride the Tide,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;michelle.s.bellamy@uscis.dhs.gov,DID(it) Ride the Tide - DEV tide_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3475?src=confmacro
+,,,,,,DID(it) Ride the Tide - Preview tide_preview uscispreprodidp2,,
+,,,,,,DID(it) Ride the Tide - Staging tide_staging uscispreprodidp2,,
+,,,,,,DID(it) Ride the Tide - TEST tide_test,,
+USCISICAM-3474,VIS SVS MOD,NOT STARTED,PreProd,USCISICAM-3415,Leonid.Shmunis@uscis.dhs.gov,VIS SVS MOD - Preprod svs_preprod uscispreprodidp_uidunspecified,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3474?src=confmacro
+USCISICAM-3473,FIPS Case360,NOT STARTED,PreProd,USCISICAM-3415,nancy.c.small@uscis.dhs.gov;Jason.R.Thomas@uscis.dhs.gov;feng.ding@uscis.dhs.gov;Lijuan.Zhang@uscis.dhs.gov;jackson.c.phillips@uscis.dhs.gov;curtis.l.noel@uscis.dhs.gov;michael.c.wellman@uscis.dhs.gov,FIPS Case360 - Stage (8005) stagecloneFIPS8005https://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3473?src=confmacro
+,,,,,,FIPS Case360 - Stage (9005) stagecloneFIPS9005https://sso.preprod.uscis.dhs.gov:443/sso,,
+,,,,,,FIPS Case360 - Stage staging.fips.uscis.dhs.gov,,
+,,,,,,FIPS Crystal Reports - Stage staging.fipscr.uscis.dhs.gov uscispreprodidp_uidunspecified,,
+,,,,,,FIPS Case360 - Stage (8001) stagingFIPS8001https://sso.preprod.uscis.dhs.gov:443/sso,,
+,,,,,,FIPS Case360 - Stage (8005) stagingFIPS8005https://sso.preprod.uscis.dhs.gov:443/sso,,
+,,,,,,FIPS Case360 - Stage (9001) stagingFIPS9001https://sso.preprod.uscis.dhs.gov:443/sso,,
+,,,,,,FIPS Case360 - Stage (9005) stagingFIPS9005https://sso.preprod.uscis.dhs.gov:443/sso,,
+USCISICAM-3472,DID(it) Scheduler,NOT STARTED,PreProd,USCISICAM-3415,,DID(it) Scheduler - DEV scheduler_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3472?src=confmacro
+,,,,,,DID(it) Scheduler - Preview scheduler_preview,,
+,,,,,,DID(it) Scheduler - Staging scheduler_staging,,
+,,,,,,DID(it) Scheduler - TEST scheduler_test,,
+USCISICAM-3471,DID(it) RAMT,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;robert.e.purvis@uscis.dhs.gov,DID(it) RAMT - DEV ramt_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3471?src=confmacro
+,,,,,,DID(it) RAMT - Preview ramt_preview uscispreprodidp2,,
+,,,,,,DID(it) RAMT - Staging ramt_staging uscispreprodidp2,,
+USCISICAM-3470,DID(it) RAD,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;ben.smithgall@hq.dhs.gov,DID(it) RAD - DEV rad_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3470?src=confmacro
+,,,,,,DID(it) RAD - Preview rad_preview uscispreprodidp2,,
+,,,,,,DID(it) RAD - Staging rad_staging,,
+,,,,,,DID(it) RAD - TEST rad_test,,
+USCISICAM-3469,DID(it) QADB,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;mark.p.palumbo@uscis.dhs.gov,DID(it) QADB - DEV qadb_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3469?src=confmacro
+,,,,,,DID(it) QADB - Preview qadb_preview uscispreprodidp2,,
+,,,,,,DID(it) QADB - Staging qadb_staging uscispreprodidp2,,
+,,,,,,DID(it) QADB - TEST qadb_test,,
+USCISICAM-3468,DID(it) PDCP,NOT STARTED,PreProd,USCISICAM-3415,Vanessa.L.Altice-Manear@uscis.dhs.gov;matthew.w.Dosberg@uscis.dhs.gov,DID(it) PDCP - DEV pdcp_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3468?src=confmacro
+,,,,,,DID(it) PDCP - Preview pdcp_preview,,
+,,,,,,DID(it) PDCP - Staging pdcp_staging,,
+,,,,,,DID(it) PDCP - TEST pdcp_test,,
+USCISICAM-3467,DID(it) PASSPORT,NOT STARTED,PreProd,USCISICAM-3415,Greg.G.Walther@uscis.dhs.gov,DID(it) PASSPORT - DEV passport_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3467?src=confmacro
+,,,,,,DID(it) PASSPORT - Preview passport_preview uscispreprodidp2,,
+,,,,,,DID(it) PASSPORT - Staging passport_staging,,
+,,,,,,DID(it) PASSPORT - TEST passport_test,,
+USCISICAM-3466,DID(it) OIT HR Dashboard,NOT STARTED,PreProd,USCISICAM-3415,Regina.R.Stokes@uscis.dhs.gov;matthew.w.Dosberg@uscis.dhs.gov,DID(it) OIT HR Dashboard - DEV oithr_dashboard_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3466?src=confmacro
+,,,,,,DID(it) OIT HR Dashboard - Preview oithr_dashboard_preview uscispreprodidp2,,
+,,,,,,DID(it) OIT HR Dashboard - Staging oithr_dashboard_staging uscispreprodidp2,,
+,,,,,,DID(it) OIT HR Dashboard - TEST oithr_dashboard_test,,
+USCISICAM-3465,NPS,NOT STARTED,PreProd,USCISICAM-3415,Sandra.J.Zwiener@uscis.dhs.gov;Karishma.K.Rekhi@uscis.dhs.gov,NPS - Stage npsweb-stage.uscis.dhs.gov uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3465?src=confmacro
+USCISICAM-3464,NASS Biometrics,NOT STARTED,PreProd,USCISICAM-3415,Francis.W.Embrey@uscis.dhs.gov,NASS Biometrics nass-webtest uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3464?src=confmacro
+USCISICAM-3463,ICAM myAccess,NOT STARTED,PreProd,USCISICAM-3415,cindy.m.szayer@uscis.dhs.gov,ICAM myAccess - Preprod myaccess_preprodhttps://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3463?src=confmacro
+USCISICAM-3462,DID(it) MSI MAP,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;uzoaku.i.onunaku@uscis.dhs.gov,DID(it) MSI MAP - DEV msi_map_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3462?src=confmacro
+,,,,,,DID(it) MSI MAP - Preview msi_map_preview uscispreprodidp2,,
+,,,,,,DID(it) MSI MAP - Staging msi_map_staging uscispreprodidp2,,
+,,,,,,DID(it) MSI MAP - TEST msi_map_test,,
+USCISICAM-3461,DID(it) LATS,NOT STARTED,PreProd,USCISICAM-3415,Sylvia.M.Jones@uscis.dhs.gov,DID(it) LATS - DEV lats_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3461?src=confmacro
+,,,,,,DID(it) LATS - Preview lats_preview uscispreprodidp2,,
+,,,,,,DID(it) LATS - Staging lats_staging,,
+,,,,,,DID(it) LATS - TEST lats_test,,
+USCISICAM-3460,DID(it) KEDL,NOT STARTED,PreProd,USCISICAM-3415,Devang.R.Patel@uscis.dhs.gov,DID(it) KEDL - DEV kedl_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3460?src=confmacro
+,,,,,,DID(it) KEDL - Docker Test kedl_docker_test uscispreprodidp2,,
+,,,,,,DID(it) KEDL - Preview kedl_preview uscispreprodidp2,,
+,,,,,,DID(it) KEDL - Staging kedl_staging,,
+,,,,,,DID(it) KEDL - TEST kedl_test,,
+USCISICAM-3459,ELIS2 InternalApp,NOT STARTED,PreProd,USCISICAM-3415,Kathleen.M.Stanley@uscis.dhs.gov,ELIS2 InternalApp - DM internalapp_dm_30a uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3459?src=confmacro
+,,,,,,ELIS2 InternalApp - EUT internalapp_eut_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - FODT internalapp_fodt_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - PE internalapp_pe_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - PP internalapp_pp_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - PT internalapp_pt_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - TRN internalapp_trn_30a uscispreprodidp,,
+,,,,,,ELIS2 InternalApp - TRN2 internalapp_trn2_30a uscispreprodidp,,
+USCISICAM-3458,ELIS2 Admin,NOT STARTED,PreProd,USCISICAM-3415,jason.b.frimpong@uscis.dhs.gov,ELIS2 Admin - PP internaladminsupport_pp_30a uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3458?src=confmacro
+USCISICAM-3457,NASS InfoPass,NOT STARTED,PreProd,USCISICAM-3415,Francis.W.Embrey@uscis.dhs.gov,NASS InfoPass infopass-webtest uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3457?src=confmacro
+USCISICAM-3456,DID(it) INFACT,NOT STARTED,PreProd,USCISICAM-3415,Devang.R.Patel@uscis.dhs.gov,DID(it) INFACT - DEV infact_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3456?src=confmacro
+,,,,,,DID(it) INFACT - Preview infact_preview,,
+,,,,,,DID(it) INFACT - Staging infact_staging,,
+,,,,,,DID(it) INFACT - TEST infact_test,,
+USCISICAM-3455,DID(it) IMPACT,NOT STARTED,PreProd,USCISICAM-3415,David.P.Badger@uscis.dhs.gov;Tiffanie.J.Dukeshire@uscis.dhs.gov;Penny.G.Swank@uscis.dhs.gov,DID(it) IMPACT - DEV impact_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3455?src=confmacro
+,,,,,,DID(it) IMPACT - Preview impact_preview,,
+,,,,,,DID(it) IMPACT - Staging impact_staging,,
+,,,,,,DID(it) IMPACT - TEST impact_test,,
+USCISICAM-3454,ICAM Fedlet Sample App,NOT STARTED,PreProd,USCISICAM-3415,cindy.m.szayer@uscis.dhs.gov,ICAM Fedlet Sample App icam_preprod_tomcat_fedlet_sample_apphttps://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3454?src=confmacro
+USCISICAM-3453,LeanKit,NOT STARTED,PreProd,USCISICAM-3415,adrian.j.monza@uscis.dhs.gov;chip.carey@leankit.com;matt.king@leankit.com,LeanKit TEST https://uscisssotest.leankit.comuscispreprodidpnosign,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3453?src=confmacro
+USCISICAM-3452,Innovation,NOT STARTED,PreProd,USCISICAM-3415,Jane.Chung@uscis.dhs.gov,Innovation - FUN https://uscis-fun.ideascale.comuscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3452?src=confmacro
+USCISICAM-3450,STARS (Salesforce),NOT STARTED,PreProd,USCISICAM-3415,patrick.j.waring@uscis.dhs.gov;Alexis.M.Burroughs@uscis.dhs.gov,STARS - DEV CRM https://uscis--DEVCRM.cs32.my.salesforce.com uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3450?src=confmacro
+,,,,,,STARS - DEVG https://uscis--DEVG.cs32.my.salesforce.com uscispreprodidp2,,
+,,,,,,STARS - PFIX https://uscis--pfix.cs32.my.salesforce.comuscispreprodidp2,,
+,,,,,,STARS - PFIX https://uscis--pfix.cs33.my.salesforce.comuscispreprodidp2,,
+,,,,,,STARS - QA https://uscis--QA.cs32.my.salesforce.comuscispreprodidp2,,
+,,,,,,STARS SIT https://uscis--sit.cs32.my.salesforce.comuscispreprodidp2,,
+,,,,,,STARS - UAT https://uscis--uat.cs32.my.salesforce.com,,
+,,,,,,STARS - UATG https://uscis--uatg.cs32.my.salesforce.com,,
+,,,,,,STARS - UATG https://uscis--uatg.cs33.my.salesforce.com,,
+USCISICAM-3446,NFTS,NOT STARTED,PreProd,USCISICAM-3415,Nathaniel.Goodwyn@uscis.dhs.gov;Richard.T.Kim@uscis.dhs.gov;Steven.D.Marsico@uscis.dhs.gov;Dien.N.Hoang@uscis.dhs.gov,NFTS Stage https://nfts-stg.uscis.dhs.gov/nftshttps://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3446?src=confmacro
+USCISICAM-3445,ICAM myAccount Admin,NOT STARTED,PreProd,USCISICAM-3415,cindy.m.szayer@uscis.dhs.gov,ICAM myAccount Admin https://myaccount-preprod.uscis.dhs.gov/users/auth/saml uscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3445?src=confmacro
+USCISICAM-3444,ESB VIBE/PCQS,NOT STARTED,PreProd,USCISICAM-3415,Rickey.Manear@uscis.dhs.gov;Jeffrey.Klein@uscis.dhs.gov;Randhir.Singh@uscis.dhs.gov,ESB VIBE/PCQS https://esb2ui.esb2-stage.uscis.dhs.gov/VIBEhttps://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3444?src=confmacro
+USCISICAM-3443,Confidant,NOT STARTED,PreProd,USCISICAM-3415,andrew.g.brody@uscis.dhs.gov,Confidant - DEV https://dt-confidant.uscis.dhs.gov/v1/saml/metadatauscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3443?src=confmacro
+USCISICAM-3442,ServiceNow,NOT STARTED,PreProd,USCISICAM-3415,tristan.d.brown@uscis.dhs.gov;Gregory.M.Rankin@uscis.dhs.gov;donald.b.biven@uscis.dhs.gov;Daniel.M.Cavanaugh@uscis.dhs.gov,ServiceNow - DEV https://dhsuscisdev.service-now.comuscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3442?src=confmacro
+USCISICAM-3441,GSS Chef Automate,NOT STARTED,PreProd,USCISICAM-3415,brian.k.fitzwater@uscis.dhs.gov,GSS Chef Automate https://chef-automate.uscis.dhs.gov/api/v0/e/uscis-gss/saml/metadatauscispreprodidpnosign,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3441?src=confmacro
+USCISICAM-3440,CLAIMS4 WEB,NOT STARTED,PreProd,USCISICAM-3415,Jon.D.Ceanfaglione@uscis.dhs.gov,CLAIMS4 WEB - Stage https://c4web-stage.uscis.dhs.govuscispreprodidp,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3440?src=confmacro
+USCISICAM-3439,DID(it) Chef Delivery,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;brian.k.fitzwater@uscis.dhs.gov,DID(it) Chef Delivery https://aws-didit-test-chef-delivery.cis1test.cisrtest.uscis.dhs.gov/api/v0/e/cis-didit/saml/metadata uscispreprodidpnosign,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3439?src=confmacro
+USCISICAM-3438,FireEyes,NOT STARTED,PreProd,USCISICAM-3415,George.F.Rachis@uscis.dhs.gov,FireEyeshttps://508scantest.uscis.dhs.gov/auth/realms/worldspace-comply uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3438?src=confmacro
+,,,,,,FireEyes https://508scantest.uscis.dhs.gov/FireEyesuscispreprodidp2,,
+USCISICAM-3437,DID(it) Grant Tracker,NOT STARTED,PreProd,USCISICAM-3415,,DID(it) Grant Tracker - DEV grant_tracker_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3437?src=confmacro
+,,,,,,DID(it) Grant Tracker - Preview grant_tracker_preview,,
+,,,,,,DID(it) Grant Tracker - Staging grant_tracker_staging,,
+,,,,,,DID(it) Grant Tracker - TEST grant_tracker_test,,
+USCISICAM-3436,DID(it) FSNW,NOT STARTED,PreProd,USCISICAM-3415,sylvia.m.jones@uscis.dhs.gov,DID(it) FSNW - DEV fsnw_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3436?src=confmacro
+,,,,,,DID(it) FSNW - Preview fsnw_preview,,
+,,,,,,DID(it) FSNW - Staging fsnw_staging,,
+,,,,,,DID(it) FSNW - TEST fsnw_test,,
+USCISICAM-3435,DID(it) FOD CSDB,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;michael.a.cronic2@uscis.dhs.gov,DID(it) FOD CSDB - DEV fod_csdb_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3435?src=confmacro
+,,,,,,DID(it) FOD CSDB - Preview fod_csdb_preview uscispreprodidp2,,
+,,,,,,DID(it) FOD CSDB - Staging fod_csdb_staging uscispreprodidp2,,
+,,,,,,DID(it) FOD CSDB - TEST fod_csdb_test,,
+USCISICAM-3434,FDNS,NOT STARTED,PreProd,USCISICAM-3415,Albert.Davis@uscis.dhs.gov,FDNS-DS Stage fdns-stagehttps://sso.preprod.uscis.dhs.gov:443/sso,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3434?src=confmacro
+,,,,,,FDNS-DS Training fdns-trainhttps://sso.preprod.uscis.dhs.gov:443/sso,,
+USCISICAM-3433,DID(it) FAMS,NOT STARTED,PreProd,USCISICAM-3415,Sylvia.M.Jones@uscis.dhs.gov,DID(it) FAMS - DEV fams_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3433?src=confmacro
+,,,,,,DID(it) FAMS - Preview fams_preview,,
+,,,,,,DID(it) FAMS - Staging fams_staging,,
+,,,,,,DID(it) FAMS - TEST fams_test,,
+USCISICAM-3432,DID(it) EWRTS,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov,DID(it) EWRTS - DEV ewrts_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3432?src=confmacro
+,,,,,,DID(it) EWRTS - Preview ewrts_preview uscispreprodidp2,,
+,,,,,,DID(it) EWRTS - Staging ewrts_staging uscispreprodidp2,,
+,,,,,,DID(it) EWRTS - TEST ewrts_test uscispreprodidp2,,
+USCISICAM-3431,DID(it) ESTAT,NOT STARTED,PreProd,USCISICAM-3415,peter.c.tilley@uscis.dhs.gov;robert.m.soly@uscis.dhs.gov,DID(it) ESTAT - OSE estat_ose uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3431?src=confmacro
+,,,,,,DID(it) ESTAT Pivotal Cloud Foundry estat_pcf uscispreprodidp2,,
+,,,,,,DID(it) ESTAT - Preview estat_preview uscispreprodidp2,,
+,,,,,,DID(it) ESTAT - Staging estat_staging uscispreprodidp2,,
+,,,,,,DID(it) ESTAT - TEST estat_test uscispreprodidp2,,
+USCISICAM-3430,DID(it) EL Rescate Index of Accountability,NOT STARTED,PreProd,USCISICAM-3415,leroy.G.potts@uscis.dhs.gov;matthew.w.dosberg@uscis.dhs.gov,DID(it) EL Rescate Index of Accountability - DEV eria_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3430?src=confmacro
+,,,,,,DID(it) EL Rescate Index of Accountability - Preview eria_preview uscispreprodidp2,,
+,,,,,,DID(it) EL Rescate Index of Accountability - Staging eria_staging uscispreprodidp2,,
+,,,,,,DID(it) EL Rescate Index of Accountability - TEST eria_test,,
+USCISICAM-3429,DID(it) ELIS1 Archive,NOT STARTED,PreProd,USCISICAM-3415,Daniel.J.Kane@uscis.dhs.gov;Jay.F.Dorsey@uscis.dhs.gov,DID(it) ELIS1 Archive - DEV elis1archive_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3429?src=confmacro
+,,,,,,DID(it) ELIS1 Archive - Preview elis1archive_preview uscispreprodidp2,,
+,,,,,,DID(it) ELIS1 Archive - Staging elis1archive_staging uscispreprodidp2,,
+,,,,,,DID(it) ELIS1 Archive - TEST elis1archive_test,,
+USCISICAM-3428,DID(it) EB5 Immigrant Investor Program Database,NOT STARTED,PreProd,USCISICAM-3415,Devang.R.Patel@uscis.dhs.gov;Courtney.E.Payne@uscis.dhs.gov,DID(it) EB5 Immigrant Investor Program Database - DEV eb5db_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3428?src=confmacro
+,,,,,,DID(it) EB5 Immigrant Investor Program Database - Preview eb5db_preview uscispreprodidp2,,
+,,,,,,DID(it) EB5 Immigrant Investor Program Database - Staging eb5db_staging uscispreprodidp2,,
+,,,,,,DID(it) EB5 Immigrant Investor Program Database - TEST eb5db_test,,
+USCISICAM-3427,DID(it) ASC Drive Time,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;mark.d.jeanmarie@uscis.dhs.gov,DID(it) ASC Drive Time - DEV drive_time_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3427?src=confmacro
+,,,,,,DID(it) ASC Drive Time - Preview drive_time_preview uscispreprodidp2,,
+,,,,,,DID(it) ASC Drive Time - Staging drive_time_staging uscispreprodidp2,,
+,,,,,,DID(it) ASC Drive Time - TEST drive_time_test,,
+USCISICAM-3426,DID(it) Discourse,NOT STARTED,PreProd,USCISICAM-3415,james.d.wilson@uscis.dhs.gov,DID(it) Discourse - DEV discourse_dev,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3426?src=confmacro
+,,,,,,DID(it) Discourse - Preview discourse_preview uscispreprodidp2,,
+,,,,,,DID(it) Discourse - Staging discourse_staging uscispreprodidp2,,
+,,,,,,DID(it) Discourse - TEST discourse_test,,
+USCISICAM-3425,ELIS2 Digital Evidence,NOT STARTED,PreProd,USCISICAM-3415,David.A.Blair@uscis.dhs.gov,ELIS2 Digital Evidence - DM digitalevidence_dm_30a,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3425?src=confmacro
+,,,,,,ELIS2 Digital Evidence - EUT digitalevidence_eut_30a uscispreprodidp,,
+,,,,,,ELIS2 Digital Evidence - FODT digitalevidence_fodt_30a,,
+,,,,,,ELIS2 Digital Evidence - PE digitalevidence_pe_30a,,
+,,,,,,ELIS2 Digital Evidence - PP digitalevidence_pp_30a uscispreprodidp,,
+,,,,,,ELIS2 Digital Evidence - PT digitalevidence_pt_30a uscispreprodidp,,
+,,,,,,ELIS2 Digital Evidence - TRN digitalevidence_trn_30a uscispreprodidp,,
+,,,,,,ELIS2 Digital Evidence - TRN2 digitalevidence_trn2_30a uscispreprodidp,,
+USCISICAM-3424,DID(it) AI Ops,NOT STARTED,PreProd,USCISICAM-3415,,DID(it) AI Ops - DEV diditaiops_development,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3424?src=confmacro
+,,,,,,DID(it) AI Ops - Preview diditaiops_preview,,
+,,,,,,DID(it) AI Ops - Staging diditaiops_staging,,
+,,,,,,DID(it) AI Ops - TEST diditaiops_test,,
+USCISICAM-3423,DID(it) Standard Development Environment,NOT STARTED,PreProd,USCISICAM-3415,robert.m.soly@uscis.dhs.gov,DID(it) Standard Development Environment didit_dev,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3423?src=confmacro
+USCISICAM-3422,DID(it) CAP Tracker,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;xian.h.chen@uscis.dhs.gov,DID(it) CAP Tracker - DEV cap_tracker_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3422?src=confmacro
+,,,,,,DID(it) CAP Tracker - Preview cap_tracker_preview uscispreprodidp2,,
+,,,,,,DID(it) CAP Tracker - Staging cap_tracker_staging uscispreprodidp2,,
+,,,,,,DID(it) CAP Tracker - TEST cap_tracker_test,,
+USCISICAM-3421,SMART,NOT STARTED,PreProd,USCISICAM-3415,truc.d.huynh@uscis.dhs.gov,SMART - Staging bifoundationdomain uscispreprodidp_uidunspecified,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3421?src=confmacro
+,,,,,,SMART AWS - Staging bifoundationdomainAWS uscispreprodidp_uidunspecified,,
+USCISICAM-3419,DID(it) BADS,NOT STARTED,PreProd,USCISICAM-3415,robert.m.soly@uscis.dhs.gov;Matthew.W.Dosberg@uscis.dhs.gov,DID(it) BADS - DEV bads_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3419?src=confmacro
+,,,,,,DID(it) BADS - Preview bads_preview,,
+,,,,,,DID(it) BADS - Staging bads_staging,,
+,,,,,,DID(it) BADS - TEST bads_test,,
+USCISICAM-3418,DID(it) AST Error Tracker,NOT STARTED,PreProd,USCISICAM-3415,matthew.w.dosberg@uscis.dhs.gov;ron.a.romant@uscis.dhs.gov,DID(it) AST Error Tracker - DEV asterror_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3418?src=confmacro
+,,,,,,DID(it) AST Error Tracker - Preview asterror_preview uscispreprodidp2,,
+,,,,,,DID(it) AST Error Tracker - Staging asterror_staging uscispreprodidp2,,
+,,,,,,DID(it) AST Error Tracker - TEST asterror_test,,
+USCISICAM-3417,DID(it) Asset Manager,NOT STARTED,PreProd,USCISICAM-3415,James.D.Wilson@uscis.dhs.gov;elijah.i.hall@uscis.dhs.gov;James.W.Plouffe@uscis.dhs.gov,DID(it) Asset Manager - DEV assetmanager_development uscispreprodidp2,18-Jan-17,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3417?src=confmacro
+,,,,,,DID(it) Asset Manager - Preview assetmanager_preview uscispreprodidp2,,
+,,,,,,DID(it) Asset Manager - Staging assetmanager_staging uscispreprodidp2,,
+,,,,,,DID(it) Asset Manager - TEST assetmanager_test,,
+USCISICAM-3416,DID(it) App Store,NOT STARTED,PreProd,USCISICAM-3415,robert.m.soly@uscis.dhs.gov;Matthew.W.Dosberg@uscis.dhs.gov,DID(it) App Store - DEV app_store_development uscispreprodidp2,,https://sharedservices.dhs.gov/jira/browse/USCISICAM-3416?src=confmacro
+,,,,,,DID(it) App Store - Preview app_store_preview uscispreprodidp2,,
+,,,,,,DID(it) App Store - Staging app_store_staging uscispreprodidp2,,
+,,,,,,DID(it) App Store - TEST app_store_test,,

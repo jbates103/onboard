@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  url: MyString
+  owner_poc_id: 1
+  icam_poc_id: 1
+  user_population: 1
+  authn_jira_ticket_id: MyString
+  authz_jira_ticket_id: MyString
+  sso_technology: MyString
+  comment: MyText
+  description: MyText
+  status: 1
+
+two:
+  name: MyString
+  url: MyString
+  owner_poc_id: 1
+  icam_poc_id: 1
+  user_population: 1
+  authn_jira_ticket_id: MyString
+  authz_jira_ticket_id: MyString
+  sso_technology: MyString
+  comment: MyText
+  description: MyText
+  status: 1

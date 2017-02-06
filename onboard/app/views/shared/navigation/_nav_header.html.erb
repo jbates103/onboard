@@ -1,0 +1,17 @@
+<nav class="navbar onboard-header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      	<h4><%= image_tag('DHS_seal.png', size: '30x30')%>  Onboard Applications</h4>
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+      	<li style="margin-right: 5px;"><a href=""><span class="glyphicon glyphicon-log-out">Sign Out</span></a></li>
+      <% else%>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li style="margin-right: 5px;"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
