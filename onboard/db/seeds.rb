@@ -17,3 +17,8 @@ if File.exists?("#{Rails.root}/files/sso_apps_detail.csv")
   AppDetailsParser.new("#{Rails.root}/files/sso_apps_detail.csv").populate_apps
 end
 
+Staff.create(
+	first_name: 'Jonathan',
+	last_name: 'Bateman',
+	email: 'user@gmail.com'
+	)

@@ -22,7 +22,7 @@ class AppsController < ApplicationController
   	authorize @app
   	if @app.update(permitted_params)
   	  flash[:success] = t('onboard.controllers.apps.update.success')
-  	  redirect_to #redirect_url
+  	  redirect_to app_path(@app)
   	else
   	  flash[:error] = t('onboard.controllers.apps.update.failure')
   	  render :index
@@ -41,7 +41,7 @@ class AppsController < ApplicationController
 
   	if @app.save
   	  flash[:success] = t('onboard.controllers.apps.create.success')
-  	  redirect_to #
+  	  redirect_to app_path(@app)
   	else
   	  flash[:error] = t('onboard.controllers.apps.create.failure')
   	  render :index
@@ -53,11 +53,22 @@ class AppsController < ApplicationController
   	app = Apps.find(params[:id])
   	if app.destroy
   	  flash[:success] = t('onboard.controllers.apps.destroy.success')
-  	  redirect_to redirect_url =  #dashboard
+  	  redirect_to apps_path
   	else
   	  flash[:error] = t('onboard.controllers.apps.destroy.failure')
   	  render :index
   	end
+  end
+
+  def search_app
+    app = App.find_by_name(params[:name])
+    if app
+      flash[:success] = "Found app successfully!"
+      redirect_to(app)
+    else
+      flash[:error] = "App not found!"
+      render :index
+    end
   end
 
   private

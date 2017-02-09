@@ -20,7 +20,7 @@ class StaffsController < ApplicationController
 
   	if @staff.save
   	  flash[:success] = t('onboard.controllers.staff.create.success')
-  	  redirect_to #index
+  	  redirect_to staff_path(@staff)
   	else
   	  flash[:error] = t('onboard.controllers.staff.create.failure')
   	  render :new
@@ -33,7 +33,7 @@ class StaffsController < ApplicationController
 
   	if staff.destroy
   	  flash[:success] = t('onboard.controllers.staff.destroy.success')
-  	  redirect_to #indexpxx
+  	  redirect_to staffs_path
   	else
   	  flash[:error] = t('onboard.controllers.staff.destroy.failure')
   	  render :index
@@ -49,7 +49,7 @@ class StaffsController < ApplicationController
 
   	if @staff.update(permitted_params)
   	  flash[:success] = t('onboard.controllers.staff.udpate.success')
-  	  redirect_to #index
+  	  redirect_to staff_path(@staff)
   	else
   	  flash[:error] = t('onboard.controllers.staff.update.failure')
   	  render :edit

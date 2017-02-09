@@ -1,6 +1,6 @@
 class Staff < ApplicationRecord
-	validate :email, presence: true, uniqueness: true,
+	validates :email, presence: true, uniqueness: true,
 			 email: { mx: true, domain: true, ban_disposable_email: true }
-	validate :first_name, presence: true
-	validate :last_name, presence: true, uniqueness: { scope: :first_name }
+	validates :first_name, presence: true
+	validates :last_name, presence: true, uniqueness: { scope: :first_name }
 end

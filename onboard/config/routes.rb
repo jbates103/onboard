@@ -16,10 +16,19 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/sign_in' => 'users/sessions#new', as: :new_user_session
     post '/sign_in' => 'users/sessions#create', as: :user_session
+    delete '/sign_out' => 'users/sessions#destroy', as: :destroy_user_session
     get '/dash' => 'dashboard#index'
+    get 'search_app' => 'apps#search_app'
+
+    resources :staffs
+    resources :apps
+    resources :point_of_contacts
   end
 
-  resources :staffs
-  resources :apps
-  resources :point_of_contacts
+
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
 end

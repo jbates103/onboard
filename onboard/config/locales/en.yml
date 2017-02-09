@@ -22,9 +22,9 @@
 en:
   onboard:
     controllers:
-      dashboad:
+      dashboard:
         index:
-          unauthorized: 'Unauthorized: Must be apart of staff'
+          unauthorized: 'Unauthorized: Staff not found.  Please contact an administrator.'
       staff:
         create:
           success: 'Staff member successfully created!'

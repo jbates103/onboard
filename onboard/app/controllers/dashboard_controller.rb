@@ -5,12 +5,14 @@ class DashboardController < ApplicationController
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def index
-    @apps = Apps.all
+    @app = App.new
+    @apps = App.all
     authorize :staff, :login_process? 
   end
 
   def user_not_authorized
-  	flash[:error] = I18n.t('onboard.error.controllers.index.unauthorized')
   	sign_out current_user
+    flash[:danger] = I18n.t('onboard.controllers.dashboard.index.unauthorized')
+    redirect_to after_sign_out_path_for(:user)
   end
 end

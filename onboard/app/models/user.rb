@@ -7,14 +7,13 @@ class User < ApplicationRecord
          :confirmable
 
   
-  
   validates :role, presence: true
 
   enum role: { user: 0, admin: 1 }
 
-  before_create :assign_role
+  before_validation :set_user_role
 
-  def assign_role
+  def set_user_role
   	self.role ||= :user
   end
 end

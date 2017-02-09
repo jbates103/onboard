@@ -5,12 +5,54 @@
       	<h4><%= image_tag('DHS_seal.png', size: '30x30')%>  Onboard Applications</h4>
       </a>
     </div>
+    <ul class="nav navbar-nav">
+      <% if user_signed_in? && current_user.admin? %>
+    	  <li class="dropdown">   
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Add Applicaiton</a></li>
+            <li><a href="#">Edit/Remove Application</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Add POC</a></li>
+            <li><a href="#">Edit/Remove POC</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Create Staff</a></li>
+            <li><a href="#">Edit/Remove Staff</a></li>
+          </ul>
+        </li>
+      <% end %>
+      <% if user_signed_in? %>
+        <li><%= link_to 'Applications', apps_path %></li>
+        <li><%= link_to 'Point of Contacts', point_of_contacts_path %></li>
+        <% if current_user.admin? %>
+          <li><%= link_to 'Staff', staffs_path %></li>
+        <% end %>
+      <% end %>
+    </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-      	<li style="margin-right: 5px;"><a href=""><span class="glyphicon glyphicon-log-out">Sign Out</span></a></li>
+        <li class="dropdown">   
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+          </ul>
+        </li>
+      	<li style="margin-right: 5px;">
+           <%= link_to destroy_user_session_path, method: :delete do %> 
+              <span class="glyphicon glyphicon-log-out"></span> Sign Out
+           <% end %>
+        </li>
       <% else%>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li style="margin-right: 5px;"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+        <li>
+          <%= link_to new_user_registration_path, method: :get do %> 
+            <span class="glyphicon glyphicon-user"></span> Sign Up
+          <% end %>
+        </li>
+        <li style="margin-right: 5px;">
+          <%= link_to new_user_session_path, method: :get do %> 
+            <span class="glyphicon glyphicon-log-in"></span> Sign In
+          <% end %>
+        </li>
       <% end %>
     </ul>
   </div>

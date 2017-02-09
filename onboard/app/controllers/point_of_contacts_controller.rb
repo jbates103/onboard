@@ -4,7 +4,7 @@ class PointOfContactsController < ApplicationController
 
   def index
   	@point_of_contacts = PointOfContact.all	
-  	authorize PointOfContact
+  	authorize @point_of_contacts
   end
 
   def show
@@ -23,7 +23,7 @@ class PointOfContactsController < ApplicationController
 
   	if @point_of_contact.save
   	  flash[:success] = t('onboard.controllers.point_of_contact.create.success')
-  	  redirect_to #index
+  	  redirect_to point_of_contact_path(@point_of_contact)
   	else
   	  flash[:error] = t('onboard.controllers.point_of_contact.create.failure')
   	  render :index
@@ -36,7 +36,7 @@ class PointOfContactsController < ApplicationController
   	
   	if point_of_contact.destroy
   	  flash[:success] = t('onboard.controllers.point_of_contact.destroy.success')
-  	  redirect_to #index
+  	  redirect_to point_of_contacts_path
   	else
   	  flash[:error] = t('onboard.controllers.point_of_contact.destroy.failure')
   	  render :index
@@ -52,7 +52,7 @@ class PointOfContactsController < ApplicationController
 
   	if @point_of_contact.update(permitted_params)
   	  flash[:success] = t('onboard.controllers.point_of_contact.udpate.success')
-  	  redirect_to #index
+  	  redirect_to point_of_contact_path(@point_of_contact)
   	else
   	  flash[:error] = t('onboard.controllers.point_of_contact.udpate.failure')
   	  render :index

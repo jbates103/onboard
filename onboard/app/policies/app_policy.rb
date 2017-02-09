@@ -1,4 +1,4 @@
-module AppsPolicy
+module AppPolicy
   attr_reader :current_user, :apps
 
   def initialize(current_user, model)
@@ -6,8 +6,12 @@ module AppsPolicy
   	@apps = model
   end
 
+  def show?
+    true
+  end
+
   def index?
-  	current_user.admin?
+  	true
   end
 
   def create?
