@@ -5,8 +5,9 @@ class DashboardController < ApplicationController
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def index
-    @app = App.new
-    @apps = App.all
+    @apps = App.sample_data
+    @new_poc = PointOfContact.new_entries(current_user.last_sign_in_at)
+    @new_apps = App.new_entries(current_user.last_sign_in_at)
     authorize :staff, :login_process? 
   end
 

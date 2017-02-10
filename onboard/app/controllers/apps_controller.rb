@@ -1,11 +1,11 @@
 class AppsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_app, only: [:show, :edit, :update]
-  after_action :verify_authorized
+  after_action :verify_authorized, except: :search_app
 
 
   def index
-  	@apps = Apps.all
+  	@apps = App.all
   	authorize Apps
   end
 
@@ -30,13 +30,13 @@ class AppsController < ApplicationController
   end
 
   def new
-  	@app = Apps.new
+  	@app = App.new
     authorize @app
   	@point_of_contacts = PointOfContact.all
   end
 
   def create
-  	@app = Apps.new(permitted_params)
+  	@app = App.new(permitted_params)
   	authorize @app
 
   	if @app.save
@@ -46,12 +46,12 @@ class AppsController < ApplicationController
   	  flash[:error] = t('onboard.controllers.apps.create.failure')
   	  render :index
   	end
-  	
   end
 
   def destroy
   	app = Apps.find(params[:id])
-  	if app.destroy
+  	authorize app
+    if app.destroy
   	  flash[:success] = t('onboard.controllers.apps.destroy.success')
   	  redirect_to apps_path
   	else
@@ -61,26 +61,31 @@ class AppsController < ApplicationController
   end
 
   def search_app
-    app = App.find_by_name(params[:name])
-    if app
-      flash[:success] = "Found app successfully!"
-      redirect_to(app)
-    else
-      flash[:error] = "App not found!"
-      render :index
+    @apps = App.where("LOWER(name) LIKE ?", "#{lowercase_name}%")
+    respond_to do |format|
+      format.html
+      format.json { render json: @apps }
     end
   end
 
   private
 
   def permitted_params
-  	params.require(:app).permit(
-      :name, :url, owner_id: [], :user_population, :jira_ticket_id, :epic
-         :sso_technology, :comment, :description, :status, :app_updated, :app_created
-        )
+  	# params.require(:app).permit(
+   #    :name, :url, owner_id: [], :user_population, :jira_ticket_id, :epic
+   #       :sso_technology, :comment, :description, :status, :app_updated, :app_created
+   #      )
+  end
+
+  def name_params
+    params.permit(:name)
   end
 
   def set_app
-  	@app = Apps.find(params[:id])
+  	@app = App.find(params[:id])
+  end
+
+  def lowercase_name
+    name_params[:name].to_s.downcase
   end
 end

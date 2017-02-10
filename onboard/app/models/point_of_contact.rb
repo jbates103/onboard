@@ -1,4 +1,6 @@
 class PointOfContact < ApplicationRecord
+  include DashboardScope
+  
   has_and_belongs_to_many :apps
   has_one :app, class_name: 'App', foreign_key: :assignee_id
   has_one :app, class_name: 'App', foreign_key: :reporter_id
