@@ -1,4 +1,4 @@
-module PointOfContactPolicy
+class PointOfContactPolicy
   attr_reader :current_user, :poc
 
   def initialize(current_user, model)
@@ -8,6 +8,10 @@ module PointOfContactPolicy
 
   def show?
     true
+  end
+
+  def new?
+    current_user.admin?
   end
 
   def index?

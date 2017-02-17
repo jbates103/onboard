@@ -1,0 +1,40 @@
+<table class="table table-default">
+  <tbody class="show-td">
+    <tr>
+     <td class="bold">Jira Ticket Id:</td>
+     <td><%= image_tag("jira.png", size: "25x25")%>  <%= app.jira_ticket_id %></td>
+    </tr>
+    <tr>
+     <td class="bold">Application Url:</td>
+     <td><%= link_to app.app_url, app.app_url %></td>
+    </tr>
+    <tr>
+     <td class="bold">SSO Technology:</td>
+     <td><%= app.sso_technology %></td>
+    </tr>
+    <tr>
+     <td class="bold">Status:</td>
+     <td><span class="jira jira-<%= app.status %>"><%= app.status.upcase %></span></td>
+    </tr>
+    <tr>
+     <td class="bold">Created At:</td>
+     <td><%= app.app_created %></td>
+    </tr>
+    <tr>
+     <td class="bold">Update At:</td>
+     <td><%= app.app_updated %></td>
+    </tr>
+    <tr>
+     <td class="bold">Epic Jira Ticket Id:</td>
+     <td><%= image_tag("jira.png", size: "25x25")%> <%= app.epic %></td>
+    </tr>
+     <tr>
+     <td class="bold">Resolution:</td>
+     <td><%= app.resolution %></td>
+    </tr>
+    <tr>
+     <td class="bold">Due Date:</td>
+     <td><%= app.due %></td>
+    </tr>
+  </tbody>
+</table>

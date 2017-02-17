@@ -1,3 +1,28 @@
 // Place all the styles related to the apps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show-bg {
+  background-color: #FFFFFF;
+  border-radius: 10px;	
+  padding: 20px 35px 75px 35px;
+}
+
+.show-header {
+	color: #316BA2;
+	font-weight: bold;
+}
+
+.show-td {
+  color: #000000;
+  font-size: large;
+  .bold {
+  	font-weight: bold;
+  }
+}
+
+.show-btn {
+  width: 200px;
+  height: 45px;
+  padding: 20px 0px 0px 0px;
+}

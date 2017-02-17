@@ -1,0 +1,73 @@
+<div class="show-bg">
+  <row>
+    <div class="col-md-9" >
+      <h1 class="show-header" style="margin-left: -15px;"><%= @app.name %></h1>
+    </div>
+    <div class="col-md-3 pull-right" style="margin-top: 30px;" >
+      <h5 class="show-header"><%= link_to "Back to the dashboard", dash_path %></h5>
+    </div>
+  </row>
+  <%= render 'table', app: @app %>
+  <h3 class="show-header">Point Of Contacts</h3>
+  <table class="table table-hover">
+    <thead class="show-td bold">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <thead>
+      <% unless @app.point_of_contacts.empty? %>
+        <tr>
+          <th colspan="3" style="color:#316BA2;" class="info bold">Owners</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @app.point_of_contacts.each do | poc| %>
+      	  <tr onclick="pointOfContactLookUp(<%= poc.id %>)">
+      	    <td><%= poc.first_name %></td>
+      	    <td><%= poc.last_name %></td>
+      	    <td><%= poc.email %></td>
+      	  </tr>
+        <% end %>
+        </tbody>
+      <% end %>
+      <thead>
+      <tr>
+       <th colspan="3" style="color: #316BA2;" class="info bold">Reporter</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr onclick="pointOfContactLookUp(<%= @app.reporter.id %>)">
+        <td><%= @app.reporter.first_name %></td>
+        <td><%= @app.reporter.last_name %></td>
+        <td><%= @app.reporter.email %></td>
+      </tr>
+      </tbody>
+      <% if @app.assignee.present? %>
+      <thead>
+        <tr>
+          <th colspan="3" style="color: #316BA2;" class="info bold">Assignee</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr onclick="pointOfContactLookUp(<%= @app.assignee.id %>)">
+          <td><%= @app.assignee.first_name %></td>
+          <td><%= @app.assignee.last_name %></td>
+          <td><%= @app.assignee.email %></td>
+        </tr>
+      <% end %>
+      </tbody>
+  </table>
+  <row>
+    <div class="col-md-10" style="margin-left: -15px;">
+      <%= link_to edit_app_path(@app), class: 'btn btn-primary show-btn' do %>
+       <h4 style="margin-top: 4px; font-weight: bold;" class="bold">Edit App</h4>
+      <% end %>
+      <%= link_to app_path(@app), method: :delete, class: 'btn btn-primary show-btn' do %>
+        <h4 style="margin-top: 4px; font-weight: bold;" class="bold">Delete App</h4>
+      <% end %>
+    </div>
+  </row>
+</div>

@@ -1,4 +1,14 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+   <% if resource.errors.any? %>
+   <div id="error_explanation">
+      <h2><%= pluralize(resource.errors.count, "Error") %></h2>
+      <ul>
+        <% resource.errors.full_messages.each do |msg| %>
+          <li> * <%= msg %></li>    
+        <% end %>
+      </ul>
+   </div>
+  <% end %>
   <div class="field">
     <br />
     <%= f.email_field :email, autofocus: true, class: 'login-input', placeholder: 'E-mail Address' %>

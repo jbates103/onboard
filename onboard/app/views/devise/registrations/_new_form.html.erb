@@ -1,5 +1,14 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+   <% if resource.errors.any? %>
+   <div class="error_explanation">
+      <h2><%= pluralize(resource.errors.count, "Error") %></h2>
+      <ul>
+        <% resource.errors.full_messages.each do |msg| %>
+          <li> * <%= msg %></li>    
+        <% end %>
+      </ul>
+   </div>
+  <% end %>
 
   <div class="field">
     <br />

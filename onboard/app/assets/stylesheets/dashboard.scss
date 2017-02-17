@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.app_search {
+.app_search, .poc_search {
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 20px 35px 20px 35px;
 }
 
-.dash-search-input {
+.dash-search-app-input, .dash-search-poc-input {
 	height: 45px;
 	width: 100%;
 	border-radius: 5px;

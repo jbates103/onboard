@@ -61,7 +61,7 @@ class AppsController < ApplicationController
   end
 
   def search_app
-    @apps = App.where("LOWER(name) LIKE ?", "#{lowercase_name}%")
+    @apps = App.where("LOWER(name) LIKE ?", "%#{lowercase_name}%")
     respond_to do |format|
       format.html
       format.json { render json: @apps }
@@ -71,14 +71,15 @@ class AppsController < ApplicationController
   private
 
   def permitted_params
-  	# params.require(:app).permit(
-   #    :name, :url, owner_id: [], :user_population, :jira_ticket_id, :epic
-   #       :sso_technology, :comment, :description, :status, :app_updated, :app_created
-   #      )
+  	params.require(:app).permit(
+      :name, :url, :user_population, :jira_ticket_id, :epic,
+         :sso_technology, :comment, :description, :status, :app_updated, :app_created, :reporter, :assignee,
+          point_of_contacts: []
+        )
   end
 
   def name_params
-    params.permit(:name)
+    params.permit(:search_term)
   end
 
   def set_app
@@ -86,6 +87,6 @@ class AppsController < ApplicationController
   end
 
   def lowercase_name
-    name_params[:name].to_s.downcase
+    name_params[:search_term].to_s.downcase
   end
 end

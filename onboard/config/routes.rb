@@ -18,7 +18,8 @@ Rails.application.routes.draw do
     post '/sign_in' => 'users/sessions#create', as: :user_session
     delete '/sign_out' => 'users/sessions#destroy', as: :destroy_user_session
     get '/dash' => 'dashboard#index'
-    get 'search_app' => 'apps#search_app'
+    get '/search_app' => 'apps#search_app'
+    get '/search_poc' => 'point_of_contacts#search_poc'
 
     resources :staffs
     resources :apps
