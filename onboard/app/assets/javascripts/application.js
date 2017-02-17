@@ -29,3 +29,7 @@ function staffLookUp(staffId){
   document.location = "/staffs/" +  staffId;
 }
 
+function toggleSidebar(){
+  $("#wrapper").toggleClass("toggled");
+}
+

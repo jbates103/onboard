@@ -25,7 +25,7 @@
         </thead>
         <tbody>
         <% @app.point_of_contacts.each do | poc| %>
-      	  <tr onclick="pointOfContactLookUp(<%= poc.id %>)">
+      	  <tr style="cursor: pointer;" onclick="pointOfContactLookUp(<%= poc.id %>)">
       	    <td><%= poc.first_name %></td>
       	    <td><%= poc.last_name %></td>
       	    <td><%= poc.email %></td>
@@ -39,7 +39,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr onclick="pointOfContactLookUp(<%= @app.reporter.id %>)">
+      <tr style="cursor: pointer;" onclick="pointOfContactLookUp(<%= @app.reporter.id %>)">
         <td><%= @app.reporter.first_name %></td>
         <td><%= @app.reporter.last_name %></td>
         <td><%= @app.reporter.email %></td>
@@ -52,7 +52,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr onclick="pointOfContactLookUp(<%= @app.assignee.id %>)">
+        <tr style="cursor: pointer;" onclick="pointOfContactLookUp(<%= @app.assignee.id %>)">
           <td><%= @app.assignee.first_name %></td>
           <td><%= @app.assignee.last_name %></td>
           <td><%= @app.assignee.email %></td>

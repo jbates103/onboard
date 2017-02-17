@@ -3,20 +3,24 @@
 <head>
   <title>Onboard Apps</title>
 
-  <%= stylesheet_link_tag "//aui-cdn.atlassian.com/aui-adg/6.0.6/css/aui-experimental.min.css", media: "all" %>
   <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag"//aui-cdn.atlassian.com/aui-adg/6.0.6/js/aui-experimental.min.js" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/navigation/nav_header' %>
-  <div class="container">
-    <%= render 'shared/messages/flash_messages' %>
-    <%= yield %>  
+    <%= render 'shared/navigation/nav_header' %>   
+    <div id="wrapper" class="toggled">
+      <div class="container-fluid">
+        <%= render 'shared/navigation/sidebar'%>
+      </div>
+      <div class="container-fluid main-content">
+        <row>
+          <div class="col-md-8 col-md-offset-2">
+           <%= render 'shared/messages/flash_messages' %>
+           <%= yield %>
+          </div>
+        </row>    
+      </div>
   </div>
-
-
-
 </body>
 </html>

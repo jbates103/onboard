@@ -24,7 +24,7 @@
           </thead>
           <tbody>
           <% @own.each do |app| %>
-            <tr onclick="appLookUp(<%= app.id %>)">
+            <tr style="cursor: pointer;" onclick="appLookUp(<%= app.id %>)">
           	  <td><%= app.name %></td>
           	  <td><%= app.jira_ticket_id %></td>
           	  <td><%= app.app_url %></td>
@@ -40,7 +40,7 @@
           </thead>
           <tbody>
           <% @reporting.each do |app| %>
-            <tr onclick="appLookUp(<%= app.id %>)">
+            <tr style="cursor: pointer;" onclick="appLookUp(<%= app.id %>)">
           	  <td><%= app.name %></td>
           	  <td><%= app.jira_ticket_id %></td>
           	  <td><%= app.app_url %></td>
@@ -56,7 +56,7 @@
           </thead>
           <tbody>
           <% @assigned.each do |app| %>
-            <tr onclick="appLookUp(<%= app.id %>)">
+            <tr style="cursor: pointer;" onclick="appLookUp(<%= app.id %>)">
           	  <td><%= app.name %></td>
           	  <td><%= app.jira_ticket_id %></td>
           	  <td><%= app.app_url %></td>

@@ -51,7 +51,7 @@ function pocHeader(){
 }
 
 function appRow(value, class_val){
-  return `<tr onclick='appLookUp(${value.id})' ${class_val} >  
+  return `<tr style="cursor: pointer;" onclick='appLookUp(${value.id})' ${class_val} >  
 		    <td>${value.name}</td>
 		    <td>${value.jira_ticket_id}</td>
 			<td>${value.reporter}</td>
@@ -61,7 +61,7 @@ function appRow(value, class_val){
 }
 
 function pocRow(value, class_val){
-   return `<tr onclick='pointOfContactLookUp(${value.id})' ${class_val} >  
+   return `<tr style="cursor: pointer;" onclick='pointOfContactLookUp(${value.id})' ${class_val} >  
 		    <td>${value.first_name}</td>
 		    <td>${value.last_name}</td>
 			<td>${value.email}</td>

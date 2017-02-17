@@ -1,0 +1,39 @@
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand">
+      <%= link_to 'Dashboard', dash_path  %>
+    </li>
+    <hr style="margin: -5px 5px 10px 5px;">
+    <li>
+      <%= link_to 'Onboard Applications', apps_path %>
+    </li>
+    <li>
+      <%= link_to 'Point of Contacts', point_of_contacts_path %>
+    </li>
+    <% if user_signed_in? %>               
+        <li>
+          <font color="#316BA2" style="font-weight: bold;">Administration</font>
+        </li>
+        <hr style="margin: -5px 5px 10px 5px;">
+        <li>
+          <%= link_to 'Add Application', new_app_path %>
+        </li>
+        <li>
+          <%= link_to 'Add Point Of Contact', new_point_of_contact_path %>
+        </li>
+    <% end %>
+    <li>
+     <font color="#316BA2" style="font-weight: bold;">General</font>
+    </li>
+     <hr style="margin: -5px 5px 10px 5px;">
+    <li>
+      <%= link_to 'Help', help_path %>
+    </li>
+    <li>
+      <%= link_to 'Contact Us', contact_path %>
+    </li>
+    <li>
+      <%= link_to 'About', about_path %>
+    </li>
+  </ul>
+</div>

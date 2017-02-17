@@ -1,34 +1,13 @@
-<nav class="navbar onboard-header">
+<nav class="navbar navbar-fixed-top onboard-header">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/dash">
+      <%if user_signed_in? %>
+        <a class="navbar-brand" style="cursor: pointer;" onclick="toggleSidebar()"><span class="glyphicon glyphicon-menu-hamburger nav-open-button"></span></a>
+      <% end %>
+      <a class="navbar-brand">
       	<h4><%= image_tag('DHS_seal.png', size: '30x30')%>  Onboard Applications</h4>
       </a>
     </div>
-    <ul class="nav navbar-nav">
-      <% if user_signed_in? && current_user.admin? %>
-    	  <li class="dropdown">   
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Add Applicaiton</a></li>
-            <li><a href="#">Edit/Remove Application</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Add POC</a></li>
-            <li><a href="#">Edit/Remove POC</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Create Staff</a></li>
-            <li><a href="#">Edit/Remove Staff</a></li>
-          </ul>
-        </li>
-      <% end %>
-      <% if user_signed_in? %>
-        <li><%= link_to 'Applications', apps_path %></li>
-        <li><%= link_to 'Point of Contacts', point_of_contacts_path %></li>
-        <% if current_user.admin? %>
-          <li><%= link_to 'Staff', staffs_path %></li>
-        <% end %>
-      <% end %>
-    </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
         <li class="dropdown">   
@@ -49,11 +28,11 @@
           <% end %>
         </li>
         <li style="margin-right: 5px;">
-          <%= link_to new_user_session_path, method: :get do %> 
+          <%= link_to new_user_session_path, method: :get  do %> 
             <span class="glyphicon glyphicon-log-in"></span> Sign In
           <% end %>
         </li>
       <% end %>
     </ul>
   </div>
-</nav>
+</nav> 
