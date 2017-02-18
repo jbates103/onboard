@@ -1,7 +1,9 @@
 <div id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <li class="sidebar-brand">
-      <%= link_to 'Dashboard', dash_path  %>
+      <%= link_to dash_path  do %>
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Dashboard
+      <% end %>
     </li>
     <hr style="margin: -5px 5px 10px 5px;">
     <li>
@@ -12,7 +14,7 @@
     </li>
     <% if user_signed_in? %>               
         <li>
-          <font color="#316BA2" style="font-weight: bold;">Administration</font>
+          <font color="#316BA2" style="font-weight: bold; font-size: large;">Administration</font>
         </li>
         <hr style="margin: -5px 5px 10px 5px;">
         <li>
@@ -23,7 +25,7 @@
         </li>
     <% end %>
     <li>
-     <font color="#316BA2" style="font-weight: bold;">General</font>
+     <font color="#316BA2" style="font-weight: bold; font-size: large;">General</font>
     </li>
      <hr style="margin: -5px 5px 10px 5px;">
     <li>

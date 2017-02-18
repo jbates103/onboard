@@ -15,11 +15,18 @@ class App < ApplicationRecord
 
   default_scope { order(name: :desc) }
 
-  def self.all_reporter_apps(reporter_id)
-  	where(reporter_id: reporter_id)
+  scope :all_reporter_apps, -> (reporter_id) { where(reporter_id: reporter_id) }
+  scope :all_assignee_apps, -> (assignee_id) { where(assignee_id: assignee_id) }
+
+  def lower_environments?
+    dt? || pt? || dm?
   end
 
-  def self.all_assignee_apps(assignee_id)
-  	where(assignee_id: assignee_id)
+  def production?
+    preprod? || prod?
+  end
+
+  def self_assignment?
+    assignee.email == reporter.email
   end
 end

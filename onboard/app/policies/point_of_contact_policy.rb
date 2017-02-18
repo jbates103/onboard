@@ -23,7 +23,7 @@ class PointOfContactPolicy
   end
 
   def edit?
-  	current_user.admin?
+  	current_user.admin? || current_user.email == poc.email
   end
 
   def new?
@@ -32,5 +32,9 @@ class PointOfContactPolicy
 
   def destroy?
   	current_user.admin?
+  end
+
+  def update?
+    current_user.admin? || current_user.email == poc.email
   end
 end

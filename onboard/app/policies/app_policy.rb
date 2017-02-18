@@ -1,9 +1,9 @@
 class AppPolicy 
-  attr_reader :current_user, :apps
+  attr_reader :current_user, :app
 
   def initialize(current_user, model)
   	@current_user = current_user
-  	@apps = model
+  	@app = model
   end
 
   def show?
@@ -27,6 +27,10 @@ class AppPolicy
   end
 
   def edit?
-  	current_user.admin?
+  	current_user.admin? || @app.point_of_contacts.exists(email: current_user.email)
+  end
+
+  def update?
+    current_user.admin? || @app.point_of_contacts.exists(email: current_user.email)
   end
 end
