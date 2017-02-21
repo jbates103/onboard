@@ -1,12 +1,13 @@
 class AppsController < ApplicationController
+  include SearchTermConcern
   before_action :authenticate_user!
   before_action :set_app, only: [:show, :edit, :update]
   after_action :verify_authorized, except: :search_app
 
 
   def index
-  	@apps = App.all
-  	authorize Apps
+    @apps =  search_term? ? App.where('name LIKE ?', search_term).page(params[:page]) : App.page(params[:page])
+  	authorize App
   end
 
   def show
@@ -74,19 +75,11 @@ class AppsController < ApplicationController
   	params.require(:app).permit(
       :name, :url, :user_population, :jira_ticket_id, :epic,
          :sso_technology, :comment, :description, :status, :app_updated, :app_created, :reporter, :assignee,
-          point_of_contacts: []
+          point_of_contact_ids: []
         )
   end
 
-  def name_params
-    params.permit(:search_term)
-  end
-
   def set_app
-  	@app = App.find(params[:id])
-  end
-
-  def lowercase_name
-    name_params[:search_term].to_s.downcase
+    @app = App.find(params[:id])
   end
 end

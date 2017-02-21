@@ -1,9 +1,12 @@
 class PointOfContactsController < ApplicationController
+  include SearchTermConcern
   after_action :verify_authorized, except: :search_poc
   before_action :set_point_of_contact, only: [:show, :edit, :update]
 
   def index
-  	@point_of_contacts = PointOfContact.all	
+  	@point_of_contacts = search_term? ? 
+      PointOfContact.where('email LIKE ? or first_name LIKE ? or last_name LIKE ?', lowercase_name).page(params[:page]) :
+         PointOfContact.page(params[:page])
   	authorize PointOfContact
   end
 
@@ -36,6 +39,7 @@ class PointOfContactsController < ApplicationController
   	point_of_contact = PointOfContact.find(params[:id])
   	authorize point_of_contact
   	
+    App.replace_delete_reporter(point_of_contact.id)
   	if point_of_contact.destroy
   	  flash[:success] = t('onboard.controllers.point_of_contact.destroy.success')
   	  redirect_to point_of_contacts_path
@@ -80,11 +84,4 @@ class PointOfContactsController < ApplicationController
   	@point_of_contact = PointOfContact.find(params[:id])
   end
 
-  def lowercase_name
-    name_params[:search_term].to_s.downcase
-  end
-
-  def name_params
-    params.permit(:search_term)
-  end
 end

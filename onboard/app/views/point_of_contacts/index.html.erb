@@ -1,0 +1,29 @@
+<div class="poc-bg">
+  <h2 class="show-header">Point Of Contacts</h2>
+  <%= render 'poc_search_form' %>
+  <table class="table table-hover">
+    <thead class="bold">
+      <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Email</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @point_of_contacts.each_with_index do |poc, index| %>
+      	<% if index % 2 == 0 %>
+      	  <tr style="cursor: pointer;" class="info" onclick="pointOfContactLookUp('<%= poc.id %>')">
+      	<% else %>
+      	  <tr style="cursor: pointer;" onclick="pointOfContactLookUp('<%= poc.id %>')">
+      	<% end %>
+          <td><%= poc.last_name %></td>
+          <td><%= poc.first_name %></td>
+          <td><%= poc.email %></td>
+          <td><%= poc.department %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate @point_of_contacts %>
+</div>

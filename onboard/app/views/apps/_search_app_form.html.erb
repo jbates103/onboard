@@ -1,0 +1,11 @@
+<row style="margin: 0 30px 0 30px;">
+  <%= form_for apps_path, method: :get do |f| %>
+    <div class="col-md-8">
+      <%= f.text_field :search_term,  class: 'app-search-app-input', placeholder: "Application Name. Accepts wildcard '%' " %>
+    </div>
+    <div class="col-md-2">
+      <%= f.submit "Search", class: "btn btn-lg btn-primary show-btn app-search-app-btn", method: :get %>
+    </div>
+    <%= link_to 'Reset', apps_path, class: "btn btn-lg btn-primary show-btn app-search-app-btn", method: :get %>
+  <% end %>
+</row>

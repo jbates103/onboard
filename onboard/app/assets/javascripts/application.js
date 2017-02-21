@@ -31,5 +31,14 @@ function staffLookUp(staffId){
 
 function toggleSidebar(){
   $("#wrapper").toggleClass("toggled");
+  var className = $('#wrapper').attr('class');
 }
 
+function changeSidebarIcon(link){
+  var className = $('#'+ link + '-icon').attr('class');
+  if(className.includes('glyphicon-chevron-right')){
+    $('#' + link + '-icon').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
+  }else{
+    $('#' + link + '-icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
+  }
+}

@@ -48,8 +48,10 @@ gem 'valid_email'
 gem 'autoprefixer-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-# User chartkick to generate charts
+# Use chartkick to generate charts
 gem 'chartkick'
+#  Use kaminari for pagination
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

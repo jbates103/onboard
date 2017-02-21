@@ -1,2 +1,31 @@
-<h1>Apps#edit</h1>
-<p>Find me in app/views/apps/edit.html.slim</p>
+<div class="app-bg">
+ <h2 class="show-header">Onboard Applications</h2>
+ <%= render 'search_app_form' %>
+   <table class="table table-hover">
+     <thead>
+       <tr>
+         <th>Name</th>
+         <th>Jira Ticket ID</th>
+         <th>Application Url</th>
+         <th>Epic Jira Ticket ID</th>
+         <th>Status</th>
+       </tr>
+     </thead>
+     <tbody>
+       <% @apps.each_with_index do |app, index| %>
+         <% if index % 2 == 0 %>
+           <tr style="cursor: pointer;" class="info" onclick="appLookUp('<%= app.id %>')">
+         <% else%>
+           <tr style="cursor: pointer;" onclick="appLookUp('<%= app.id %>')">
+         <% end %>
+           <td><%= app.name %></td>
+           <td><%= app.jira_ticket_id %></td>
+           <td><%= app.app_url %></td>
+           <td><%= app.epic %></td>
+           <td><span class="jira jira-<%= app.status %>"><%= app.status.upcase %></span></td>
+         </tr>
+       <% end %>
+     </tbody>
+   </table>
+   <%= paginate @apps %>
+</div>

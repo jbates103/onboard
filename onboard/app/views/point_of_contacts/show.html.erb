@@ -71,7 +71,7 @@
       <%= link_to edit_point_of_contact_path(@point_of_contact), class: 'btn btn-primary show-btn' do %>
        <h4 style="margin-top: 4px; font-weight: bold;" class="bold">Edit Contact</h4>
       <% end %>
-      <%= link_to point_of_contact_path(@point_of_contact), method: :delete, class: 'btn btn-primary show-btn' do %>
+      <%= link_to point_of_contact_path(@point_of_contact), method: :delete, class: 'btn btn-primary show-btn', data: { confirm: "You will be deleting this record. Proceed?"} do %>
         <h4 style="margin-top: 4px; font-weight: bold;" class="bold">Delete Contact</h4>
       <% end %>
     </div>

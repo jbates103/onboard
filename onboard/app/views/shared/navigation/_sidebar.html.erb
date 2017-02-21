@@ -5,37 +5,42 @@
       <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Dashboard
       <% end %>
     </li>
-    <hr style="margin: -5px 5px 10px 5px;">
     <li>
       <%= link_to 'Onboard Applications', apps_path %>
     </li>
     <li>
       <%= link_to 'Point of Contacts', point_of_contacts_path %>
     </li>
-    <% if user_signed_in? %>               
-        <li>
-          <font color="#316BA2" style="font-weight: bold; font-size: large;">Administration</font>
-        </li>
-        <hr style="margin: -5px 5px 10px 5px;">
-        <li>
+    <% if user_signed_in? && current_user.admin? %> 
+      <li>
+        <a href="#AdministratorMenu" data-toggle="collapse" data-parent="#AdministratorMenu" onclick="changeSidebarIcon('admin')" class="admin-sidebar-link">  
+          <font color="#316BA2" style="font-weight: bold; font-size: large;">Administrator <i id="admin-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
+        </a>
+      </li>
+      <div class="collapse" id="AdministratorMenu" >
+        <li data-parent="#AdministratorMenu">
           <%= link_to 'Add Application', new_app_path %>
         </li>
-        <li>
+        <li data-parent="#AdministratorMenu">
           <%= link_to 'Add Point Of Contact', new_point_of_contact_path %>
         </li>
+      </div>
     <% end %>
     <li>
-     <font color="#316BA2" style="font-weight: bold; font-size: large;">General</font>
+      <a href="#GeneralMenu" data-toggle="collapse" data-parent="#GeneralMenu" onclick="changeSidebarIcon('general')" class="general-sidebar-link">
+         <font color="#316BA2" style="font-weight: bold; font-size: large;">General  <i id="general-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
+      </a>
     </li>
-     <hr style="margin: -5px 5px 10px 5px;">
-    <li>
-      <%= link_to 'Help', help_path %>
-    </li>
-    <li>
-      <%= link_to 'Contact Us', contact_path %>
-    </li>
-    <li>
-      <%= link_to 'About', about_path %>
-    </li>
+     <div class="collapse" id="GeneralMenu">
+       <li data-parent="#GeneralMenu">
+         <%= link_to 'Help', help_path %>
+       </li>
+       <li data-parent="#GeneralMenu">
+         <%= link_to 'Contact Us', contact_path %>
+       </li>
+       <li data-parent="#GeneralMenu">
+         <%= link_to 'About', about_path %>
+      </li>
+    </div>
   </ul>
 </div>

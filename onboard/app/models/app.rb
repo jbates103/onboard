@@ -18,6 +18,15 @@ class App < ApplicationRecord
   scope :all_reporter_apps, -> (reporter_id) { where(reporter_id: reporter_id) }
   scope :all_assignee_apps, -> (assignee_id) { where(assignee_id: assignee_id) }
 
+  max_paginates_per 100
+
+  def self.replace_delete_reporter(reporter_id)
+    return unless exists?(reporter_id: reporter_id)
+    poc = PointOfContact.unassigned_point_of_contact
+    where(reporter_id: reporter_id).update_all(reporter_id: poc.id)
+    true
+  end
+
   def lower_environments?
     dt? || pt? || dm?
   end
@@ -29,4 +38,6 @@ class App < ApplicationRecord
   def self_assignment?
     assignee.email == reporter.email
   end
+
+
 end
