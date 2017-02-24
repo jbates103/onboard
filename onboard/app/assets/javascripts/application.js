@@ -42,3 +42,4 @@ function changeSidebarIcon(link){
     $('#' + link + '-icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
   }
 }
+

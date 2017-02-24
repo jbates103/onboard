@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     get '/dash' => 'dashboard#index'
     get '/search_app' => 'apps#search_app'
     get '/search_poc' => 'point_of_contacts#search_poc'
+    put '/change_status' => 'apps#change_status'
 
     resources :staffs
     resources :apps

@@ -1,11 +1,13 @@
 class PointOfContactsController < ApplicationController
-  include SearchTermConcern
-  after_action :verify_authorized, except: :search_poc
+  include AjaxParamsConcern
+  before_action :authenticate_user!
   before_action :set_point_of_contact, only: [:show, :edit, :update]
+  after_action :verify_authorized, except: :search_poc
 
   def index
   	@point_of_contacts = search_term? ? 
-      PointOfContact.where('email LIKE ? or first_name LIKE ? or last_name LIKE ?', lowercase_name).page(params[:page]) :
+      PointOfContact.where('email LIKE ? or first_name LIKE ? or last_name LIKE ?', 
+        lowercase_name, lowercase_name, lowercase_name).page(params[:page]) :
          PointOfContact.page(params[:page])
   	authorize PointOfContact
   end
@@ -67,7 +69,7 @@ class PointOfContactsController < ApplicationController
 
   def search_poc
     @pocs = PointOfContact.where("LOWER(email) LIKE ? OR LOWER(first_name) LIKE ? OR LOWER(last_name) LIKE ?",
-       "%#{lowercase_name}%", "%#{lowercase_name}%", "%#{lowercase_name}%")
+       "%#{search_term_lower}%", "%#{search_term_lower}%", "%#{search_term_lower}%")
     respond_to do |format|
       format.html
       format.json { render json: @pocs }

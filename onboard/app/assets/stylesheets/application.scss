@@ -32,38 +32,28 @@ table {
   color: #FFFFFF;
   font-weight: bold;
   font-size: small;
-  border-radius: 5px;
-  padding: 2px 2px 2px 2px;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
   max-width: 20%;
 }
 
 .jira-not_started {
-  border-color: 000000;
-  border-style: solid;
   background-color: #000000;
 }
 
 .jira-blocked{
-  border-color: FF0000;
-  border-style: solid;
   background-color: #FF0000;
 }
 
 .jira-in_progress{
-  border-color: FA6000;
-  border-style: solid;
   background-color:#FFA600;
 }
 
 .jira-completed, .jira-done {
-  border-color: 1ADC06;
-  border-style: solid;
   background-color: #1ADC06;
 }
 
 .jira-accepted {
-  border-color: #005DFF;
-  border-style: solid;
   background-color:  #005DFF;
 }
 

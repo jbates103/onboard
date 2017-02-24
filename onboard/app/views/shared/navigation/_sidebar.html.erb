@@ -14,7 +14,7 @@
     <% if user_signed_in? && current_user.admin? %> 
       <li>
         <a href="#AdministratorMenu" data-toggle="collapse" data-parent="#AdministratorMenu" onclick="changeSidebarIcon('admin')" class="admin-sidebar-link">  
-          <font color="#316BA2" style="font-weight: bold; font-size: large;">Administrator <i id="admin-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
+          <font>Administrator <i id="admin-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
         </a>
       </li>
       <div class="collapse" id="AdministratorMenu" >
@@ -28,7 +28,7 @@
     <% end %>
     <li>
       <a href="#GeneralMenu" data-toggle="collapse" data-parent="#GeneralMenu" onclick="changeSidebarIcon('general')" class="general-sidebar-link">
-         <font color="#316BA2" style="font-weight: bold; font-size: large;">General  <i id="general-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
+         <font>General  <i id="general-icon" class="glyphicon glyphicon-chevron-right glyphicon-arrows"></i></font>
       </a>
     </li>
      <div class="collapse" id="GeneralMenu">

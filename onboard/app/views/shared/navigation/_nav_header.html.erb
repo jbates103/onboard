@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <%if user_signed_in? %>
-        <a class="navbar-brand" style="cursor: pointer;" onclick="toggleSidebar()"><span class="glyphicon glyphicon-menu-hamburger nav-open-button"></span></a>
+        <a class="navbar-brand cursor" onclick="toggleSidebar()"><span class="glyphicon glyphicon-menu-hamburger nav-open-button"></span></a>
       <% end %>
       <a class="navbar-brand">
       	<h4><%= image_tag('DHS_seal.png', size: '30x30')%>  Onboard Applications</h4>
@@ -16,7 +16,7 @@
             <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
           </ul>
         </li>
-      	<li style="margin-right: 5px;">
+      	<li class="li-slight-margin">
            <%= link_to destroy_user_session_path, method: :delete do %> 
               <span class="glyphicon glyphicon-log-out"></span> Sign Out
            <% end %>
@@ -27,7 +27,7 @@
             <span class="glyphicon glyphicon-user"></span> Sign Up
           <% end %>
         </li>
-        <li style="margin-right: 5px;">
+        <li class="li-slight-margin">
           <%= link_to new_user_session_path, method: :get  do %> 
             <span class="glyphicon glyphicon-log-in"></span> Sign In
           <% end %>

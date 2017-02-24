@@ -1,0 +1,12 @@
+<% pocs.each_with_index do |poc, index| %>
+	<% if index % 2 == 0 %>
+	  <tr  class="info cursor" onclick="pointOfContactLookUp(<%= poc.id %>)">
+	<% else %>
+	  <tr class="cursor" onclick="pointOfContactLookUp(<%= poc.id %>)">
+	<% end %>
+    <td><%= poc.last_name %></td>
+    <td><%= poc.first_name %></td>
+    <td><%= poc.email %></td>
+    <td><%= poc.department %></td>
+  </tr>
+<% end %>

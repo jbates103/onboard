@@ -11,6 +11,7 @@
   box-shadow: 2px 2px 5px  #000;
 }
 
+.dash-header,
 .show-header,
 .static-header {
 	color: #316BA2;
@@ -26,11 +27,12 @@
 }
 
 .show-btn {
-  width: 200px;
+  width: 150px;
   height: 45px;
   padding: 20px 0px 0px 0px;
   border-color: 39527C;
   border-style: solid;
+  margin: 5px 0 5px 0;
   -webkit-box-shadow: 2px 2px 1px  #39527C;
   -moz-box-shadow: 2px 2px 1px  #39527C;
   box-shadow: 2px 2px 1px  #39527C;
@@ -60,4 +62,55 @@
 
 .app-search-app-btn, .poc-search-btn {
   margin: 10px 0px 25px 0px;
+}
+
+.back_to_dashboard {
+  margin-top: 30px;
+  margin-right: -40px;
+}
+
+.poc-input-margin {
+  margin-top: 25px;
+}
+
+.app_color {
+  color: #316BA2;
+}
+
+.app-header-table, .poc-header-table {
+  margin-left: -15px;
+}
+
+.poc-search{
+  margin-top: 20px;
+}
+
+.show-btn-margin {
+  margin-top: 4px;
+}
+
+.show-header-links {
+  margin-left: -15px;
+}
+
+.form-search{
+  margin: 0 30px 0 30px;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.onselect-status {
+  width: 200px;
+  height: 50px;
+  display: none;
+}
+
+.change-status-link {
+  margin-left: 25px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

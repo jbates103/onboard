@@ -14,5 +14,5 @@ class PointOfContact < ApplicationRecord
   
   scope :unassigned_point_of_contact, -> { find_by_email('assign@uscis.dhs.gov') }
 
-  max_paginates_per 100
+  max_paginates_per 100  
 end

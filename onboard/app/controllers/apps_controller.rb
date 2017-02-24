@@ -1,8 +1,8 @@
 class AppsController < ApplicationController
-  include SearchTermConcern
+  include AjaxParamsConcern
   before_action :authenticate_user!
-  before_action :set_app, only: [:show, :edit, :update]
-  after_action :verify_authorized, except: :search_app
+  before_action :set_app, only: [:show, :edit, :update, :change_status]
+  after_action :verify_authorized, except: [ :search_app, :change_status]
 
 
   def index
@@ -62,10 +62,18 @@ class AppsController < ApplicationController
   end
 
   def search_app
-    @apps = App.where("LOWER(name) LIKE ?", "%#{lowercase_name}%")
+    @apps = App.where("LOWER(name) LIKE ?", "%#{search_term_lower}%")
     respond_to do |format|
       format.html
       format.json { render json: @apps }
+    end
+  end
+
+  def change_status
+    @app.update(status_change_params)
+    respond_to do |format|
+      format.html
+      format.json { render json: [@app.status]}
     end
   end
 
