@@ -7,7 +7,7 @@ class StaffPolicy
   end
 
   def login_process?
-  	Staff.exists?(email: current_user.email)
+  	@current_user.present?
   end
 
   def new?

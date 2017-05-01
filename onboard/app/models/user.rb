@@ -6,12 +6,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable
 
-  
-  validates :role, presence: true
-
   enum role: { user: 0, admin: 1, tech: 2 }
 
-  before_validation :set_user_role
+  after_initialize :set_user_role
 
   def set_user_role
   	self.role ||= :user

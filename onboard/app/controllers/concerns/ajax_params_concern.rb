@@ -24,6 +24,14 @@ module AjaxParamsConcern
 
   private
 
+  def point_of_controller_params
+    params.require(:point_of_contacts).permit(:search_term)
+  end
+
+  def apps_params
+    params.require(:apps).permit(:search_term)
+  end
+
   def get_class_index
     case self.class.to_s
     when "PointOfContactsController"

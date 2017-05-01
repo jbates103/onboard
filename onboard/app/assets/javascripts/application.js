@@ -17,17 +17,20 @@
 //= require chartkick
 //= require_tree .
 
-function appLookUp(appId){
-  document.location = "/apps/" + appId;
-}
+$(document).on('ready', function(){
+  $('#admin-sidebar-link').on('click', function(){
+    changeSidebarIcon('admin');
+  });
 
-function pointOfContactLookUp(pocId){
-  document.location = "/point_of_contacts/" + pocId;
-}
+  $('#general-sidebar-link').on('click', function(){
+    changeSidebarIcon('general');
+  });
 
-function staffLookUp(staffId){
-  document.location = "/staffs/" +  staffId;
-}
+  $('tr[data-link]').on('click', function(){
+     window.location = $(this).data('link');
+  });
+});
+
 
 function toggleSidebar(){
   $("#wrapper").toggleClass("toggled");
@@ -35,11 +38,8 @@ function toggleSidebar(){
 }
 
 function changeSidebarIcon(link){
-  var className = $('#'+ link + '-icon').attr('class');
-  if(className.includes('glyphicon-chevron-right')){
-    $('#' + link + '-icon').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
-  }else{
-    $('#' + link + '-icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
-  }
+   $('#' + link + '-icon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
 }
+
+
 

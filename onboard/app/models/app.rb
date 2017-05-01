@@ -1,7 +1,7 @@
 class App < ApplicationRecord 
   include DashboardScope
   
-  has_and_belongs_to_many :point_of_contacts, inverse_of: :point_of_contacts, dependent: :delete
+  has_and_belongs_to_many :point_of_contacts, dependent: :delete
   has_and_belongs_to_many :descriptions, dependent: :delete
   belongs_to :assignee, class_name: 'PointOfContact', foreign_key: :assignee_id
   belongs_to :reporter, class_name: 'PointOfContact', foreign_key: :reporter_id
@@ -22,7 +22,11 @@ class App < ApplicationRecord
 
   def self.replace_delete_reporter(reporter_id)
     return unless exists?(reporter_id: reporter_id)
-    poc = PointOfContact.unassigned_point_of_contact
+    poc = PointOfContact.create_or_find_by(
+                  first_name:  NullReporter.first_name,
+                  last_name:   NullReporter.last_name,
+                  email:       NullReporter.email
+          )
     where(reporter_id: reporter_id).update_all(reporter_id: poc.id)
     true
   end

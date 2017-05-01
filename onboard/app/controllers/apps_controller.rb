@@ -50,7 +50,7 @@ class AppsController < ApplicationController
   end
 
   def destroy
-  	app = Apps.find(params[:id])
+  	app = App.find(params[:id])
   	authorize app
     if app.destroy
   	  flash[:success] = t('onboard.controllers.apps.destroy.success')
@@ -70,10 +70,14 @@ class AppsController < ApplicationController
   end
 
   def change_status
-    @app.update(status_change_params)
     respond_to do |format|
-      format.html
-      format.json { render json: [@app.status]}
+      if @app.update(status_change_params)
+        format.html
+        format.json { render json: [@app.status] }
+      else
+        format.html
+        format.json { render json: :unprocessable_entity }
+      end
     end
   end
 

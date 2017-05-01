@@ -22,8 +22,3 @@ Staff.create(
 	last_name: 'Bateman',
 	email: 'user@gmail.com'
 	)
-PointOfContact.create(
-	first_name: 'No',
-	last_name: 'Reporter',
-	email: 'assign@uscis.dhs.gov'
-	)

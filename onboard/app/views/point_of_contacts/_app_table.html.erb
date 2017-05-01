@@ -1,5 +1,5 @@
 <% apps.each do |app| %>
-  <tr class="cursor" onclick="appLookUp(<%= app.id %>)">
+  <tr class="cursor" data-link="<%= app_path(app)%>">
 	  <td><%= app.name %></td>
 	  <td><%= app.jira_ticket_id %></td>
 	  <td><%= app.app_url %></td>

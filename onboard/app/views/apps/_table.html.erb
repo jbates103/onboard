@@ -1,5 +1,6 @@
 <row>
   <div class="col-md-12">
+      <input type="hidden" value="<%= app.id %>" id="app-id" >
       <table class="table table-default">
       <tbody class="show-td">
         <tr>
@@ -16,16 +17,16 @@
         </tr>
         <tr>
          <td class="bold">Status:</td>
-         <td><span class="display-status jira jira-<%= app.status.downcase %>"><%= app.status.upcase %></span>
-            <select class="onselect-status" onchange="changeStatus(<%= app.id %>)">
-              <option value="not_started" <%= select_option('not_started', app.status)%> >Not Started</option>
+         <td><span class="display-status jira jira-<%= app.status.downcase %>"><%= app.status.to_s.upcase.gsub(/_/, ' ') %></span>
+            <select class="onselect-status">
+              <option value="not_started" <%= select_option('not_started', app.status)%>>Not Started</option>
               <option value="in_progress" <%= select_option('in_progress', app.status)%>>In Progress</option>
               <option value="blocked" <%= select_option('blocked', app.status)%>>Blocked</option>
               <option value="completed" <%= select_option('completed', app.status)%>>Completed</option>
               <option value="done" <%= select_option('done', app.status)%>>Done</option>
               <option value="accepted"<%= select_option('accepted', app.status)%>>Accepted</option>
             </select>
-            <span class="change-status-link cursor app_color" onclick="displayStatusChanger()">Change Status</span>
+            <span class="change-status-link cursor app_color">Change Status</span>
          </td>
         </tr>
         <tr>

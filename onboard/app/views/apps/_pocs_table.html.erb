@@ -1,5 +1,5 @@
 <% pocs.each do | poc| %>
-  <tr class="cursor" onclick="pointOfContactLookUp(<%= poc.id %>)">
+  <tr class="cursor" data-link="<%= point_of_contact_path(poc)%>">
     <td><%= poc.first_name %></td>
     <td><%= poc.last_name %></td>
     <td><%= poc.email %></td>

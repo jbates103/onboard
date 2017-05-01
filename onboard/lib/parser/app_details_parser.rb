@@ -1,5 +1,5 @@
 require 'parser/parser'
-require 'email_name_extraction'
+require 'parser/email_name_extraction'
 require 'parser/indices'
 
 class AppDetailsParser < Parser

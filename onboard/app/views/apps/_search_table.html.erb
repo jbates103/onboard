@@ -1,9 +1,9 @@
  <% apps.each_with_index do |app, index| %>
-   <% if index % 2 == 0 %>
-     <tr class="info cursor" onclick="appLookUp(<%= app.id %>)">
-   <% else%>
-     <tr class="cursor" onclick="appLookUp(<%= app.id %>)">
-   <% end %>
+     <% if index % 2 == 0 %>
+       <tr class="info cursor " data-link="<%= app_path(app)%>">
+     <% else%>
+       <tr class="cursor " data-link="<%= app_path(app)%>">
+     <% end %> 
      <td><%= app.name %></td>
      <td><%= app.jira_ticket_id %></td>
      <td><%= app.app_url %></td>
